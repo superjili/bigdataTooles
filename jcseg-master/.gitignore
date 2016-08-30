@@ -1,0 +1,16 @@
+bin/
+*.class
+classes/
+doc/
+help/
+# lib/ #
+*.jar
+target/
+# Binary Files #
+# *.jar #
+# Package Files #
+.settings/
+.classpath
+.project
+# vim swp file #
+*.swp

@@ -1,0 +1,49 @@
+# @Note: 
+# append the following setting to you elasticsearch.yml
+# -----------------------------------------------------
+# setting for jcseg analysis
+index:
+  analysis:
+  
+    tokenizer:   
+      jcseg_complex:
+        type: jcseg
+        seg_mode: complex
+        # config_file: self define jcseg.properties file path [optional]
+      jcseg_simple:
+        type: jcseg
+        seg_mode: simple
+        # config_file: self define jcseg.properties file path [optional]
+      jcseg_detect:
+        type: jcseg
+        seg_mode: detect
+        # config_file: self define jcseg.properties file path [optional]
+      jcseg_search:
+        type: jcseg
+        seg_mode: search
+        # config_file: self define jcseg.properties file path [optional]
+        
+    analyzer:
+      jcseg_complex:
+        type: custom
+        filter:
+        - lowercase
+        tokenizer: jcseg_complex
+      jcseg_simple:
+        type: custom
+        filter:
+        - lowercase
+        tokenizer: jcseg_simple
+      jcseg_detect:
+        type: custom
+        filter:
+        - lowercase
+        tokenizer: jcseg_detect
+      jcseg_search:
+        type: custom
+        filter:
+        - lowercase
+        tokenizer: jcseg_search
+        
+# set Jcseg as the default analyzer
+index.analysis.analyzer.default.type : "jcseg"
