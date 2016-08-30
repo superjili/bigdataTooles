@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="XiaoV"
+  id="myeclipse.1472461966424"
+  context-root="/xiaov"
+  j2ee-spec="1.7"
+  archive="XiaoV.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
