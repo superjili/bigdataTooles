@@ -115,8 +115,8 @@ public class KeywordsExtractorTest {
                 + "当以“不畏浮云遮望眼”的宽广视野，以无私无畏的责任担当，按照hujintao总书记所要求的，"
                 + "“不失时机地推进重要领域和关键环节改革”，“继续推进经济体制、政治体制、文化体制、社会体制改革创新”。"
                 + "如此，我们就一定能把风险化解在当下，让发展乘势而上，为党和国家赢得一个光明的未来。 ";
-            keywords = extractor.getKeywordsFromString(doc);
-            //keywords = extractor.getKeywordsFromFile("/home/chenxin/curpos/1.txt");
+//            keywords = extractor.getKeywordsFromString(doc);
+            keywords = extractor.getKeywordsFromFile("D:\\234.txt");
             System.out.println(keywords);
         } catch (JcsegException e) {
             e.printStackTrace();

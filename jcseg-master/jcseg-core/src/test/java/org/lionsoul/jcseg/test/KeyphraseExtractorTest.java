@@ -35,10 +35,10 @@ public class KeyphraseExtractorTest {
             //extractor.setAutoMinLength(4);
             
             List<String> phrases;
-            phrases = extractor.getKeyphraseFromString("支持向量机广泛应用于文本挖掘，例如，"
+          /*  phrases = extractor.getKeyphraseFromString("支持向量机广泛应用于文本挖掘，例如，"
                     + "基于支持向量机的文本自动分类技术研究一文中很详细的介绍支持向量机的算法细节，"
-                    + "文本自动分类是文本挖掘技术中的一种！");
-            //phrases = extractor.getKeyphraseFromFile("/home/chenxin/curpos/5.txt");
+                    + "文本自动分类是文本挖掘技术中的一种！");*/
+            phrases = extractor.getKeyphraseFromFile("D:\\234.txt");
             System.out.println(phrases);
         } catch (JcsegException e) {
             e.printStackTrace();

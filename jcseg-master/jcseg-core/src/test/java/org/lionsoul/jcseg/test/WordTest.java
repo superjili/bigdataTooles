@@ -15,5 +15,4 @@ public class WordTest
         System.out.println("value equals ? " + (word1.getValue() == word2.getValue()));
         System.out.println("position equals ? " + (word1.getPosition() == word2.getPosition()));
     }
-
 }
