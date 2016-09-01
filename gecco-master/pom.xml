@@ -114,16 +114,6 @@
 			<organizationUrl>http://www.geccocrawler.com</organizationUrl>
 		</developer>
 	</developers>
-	<licenses>
-		<license>
-			<name>The MIT License (MIT)</name>
-			<url>https://raw.githubusercontent.com/xtuhcy/gecco/master/LICENSE</url>
-		</license>
-	</licenses>
-
-
-
-
 
 	<profiles>
 		<profile>

@@ -55,6 +55,7 @@ public abstract class AbstractRender implements Render {
 			requestFieldRender.render(request, response, beanMap, bean);
 			requestParameterFieldRender.render(request, response, beanMap, bean);
 			fieldRender(request, response, beanMap, bean);
+			System.out.println(this.getClass().getName());
 			Set<Field> customFields = ReflectionUtils.getAllFields(bean.getClass(),
 					ReflectionUtils.withAnnotation(FieldRenderName.class));
 			for (Field customField : customFields) {

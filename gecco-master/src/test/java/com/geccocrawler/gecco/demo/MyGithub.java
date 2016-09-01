@@ -114,7 +114,7 @@ public class MyGithub implements HtmlBean {
 		.start("https://github.com/xtuhcy/gecco")
 		.start("https://github.com/xtuhcy/gecco-spring")
 		//开启几个爬虫线程,线程数量最好不要大于start request数量
-		.thread(2)
+		.thread(1)
 		//单个爬虫每次抓取完一个请求后的间隔时间
 		.interval(2000)
 		//循环抓取
