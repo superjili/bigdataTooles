@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="kettleControl:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="kettleControl.war">
+      <element id="artifact" artifact-name="kettleControl:war exploded" />
+    </root>
+  </artifact>
+</component>
